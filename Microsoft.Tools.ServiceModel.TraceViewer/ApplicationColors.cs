@@ -1,0 +1,32 @@
+namespace Microsoft.Tools.ServiceModel.TraceViewer
+{
+	internal enum ApplicationColors
+	{
+		GradientInactiveCaption,
+		Highlight,
+		Info,
+		TitleBorder,
+		ActiveActivityBorder,
+		ActiveActivityBack,
+		ActiveActivityInner,
+		DefaultActivityBorder,
+		DefaultActivityBack,
+		DefaultActivityInner,
+		HighlightingBack,
+		HighlightingBack2,
+		HighlightingBorder,
+		MessageTransfer,
+		MouseOver,
+		RandomColor1,
+		RandomColor2,
+		RandomColor3,
+		RandomColor4,
+		RandomColor5,
+		RandomColor6,
+		RandomColor7,
+		RandomColor8,
+		RandomColor9,
+		RandomColor10,
+		HightlightedMenuColor
+	}
+}

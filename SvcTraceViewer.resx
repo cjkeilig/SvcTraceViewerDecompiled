@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="MainFrm_FindMI"><value>&amp;Find...</value></data>
+  <data name="MainFrm_GroupBy"><value>&amp;Group By</value></data>
+  <data name="MainFrm_ActivityViewMI"><value>&amp;Activity View</value></data>
+  <data name="SL_OptionTip"><value>Define options for the activity graph.</value></data>
+  <data name="CF_NewCustomFilterDlgName"><value>Create Custom Filter</value></data>
+  <data name="CF_RightB"><value>}</value></data>
+  <data name="CF_Remove"><value>&amp;Remove</value></data>
+  <data name="FV_Exp_NativeCode"><value>Native Error Code:</value></data>
+  <data name="MainFrm_FindNextMI"><value>Find &amp;Next</value></data>
+  <data name="FV_Basic_Level"><value>Level</value></data>
+  <data name="FV_Exp_ExpTree"><value>Exception Tree:</value></data>
+  <data name="FV_Exp_ExpType"><value>Exception Type:</value></data>
+  <data name="FV_Exp_ExpInfo"><value>Exception Information</value></data>
+  <data name="FV_AppDataText"><value>ApplicationData Text</value></data>
+  <data name="FV_Error_Init"><value>The trace was not loaded in formatted view.</value></data>
+  <data name="MainFrm_ExecThreadMode"><value>La&amp;yout Mode - Thread</value></data>
+  <data name="FV_Basic_Title"><value>Basic Information</value></data>
+  <data name="FileBlockInfo_LoadingSize"><value>Estimated Size: </value></data>
+  <data name="SL_ShowVerbose"><value>Show Non-message Verbose Traces</value></data>
+  <data name="UnhandledSysException"><value>The Microsoft Service Trace Viewer encountered a system error:</value></data>
+  <data name="SL_ProcessListTip2"><value>Show/hide thread in the view.</value></data>
+  <data name="MainFrm_FilterBar"><value>Filter &amp;Tool Bar</value></data>
+  <data name="XML_MessageLogTraceRecordStart"><value>&lt;MessageLogTraceRecord&gt;</value></data>
+  <data name="TxtSearchIn"><value>Sea&amp;rch In:</value></data>
+  <data name="MainFrm_GroupByNone"><value>&amp;Group By - (None)</value></data>
+  <data name="SL_SmallTip"><value>Switch the graph to normal size.</value></data>
+  <data name="MainFrm_GroupByProcessTip"><value>Group trace record(s) by process or thread.</value></data>
+  <data name="FV_MSG2_Parameters"><value>Parameters:</value></data>
+  <data name="MainFrm_ProjectViewMI"><value>&amp;Project View</value></data>
+  <data name="FV_OptionsTip"><value>Define options for formatted view.</value></data>
+  <data name="MainFrm_HelpMenu"><value>&amp;Help</value></data>
+  <data name="LE_SourceCol"><value>Source</value></data>
+  <data name="CF_Prefix"><value>prefix</value></data>
+  <data name="MainFrm_TreeTab"><value>Graph</value></data>
+  <data name="FV_MSG2_MsgType"><value>Message Type:</value></data>
+  <data name="FV_MSG2_MsgTime"><value>Message Time:</value></data>
+  <data name="MsgStreamClosed"><value>- The stream is closed.</value></data>
+  <data name="MainFrm_SavePrjAsMI"><value>Save Projec&amp;t As...</value></data>
+  <data name="PJ_Extension"><value>.stvproj</value></data>
+  <data name="CF_NoNodeName"><value>(empty)</value></data>
+  <data name="MainFrm_Traces"><value>Traces: </value></data>
+  <data name="FV_Diag_Callstack"><value>Stack Trace:</value></data>
+  <data name="PL_Adjust"><value>Ad&amp;just</value></data>
+  <data name="MsgIOException"><value>An I/O error occurred while opening file '</value></data>
+  <data name="CF_XPathExpression"><value>XPath &amp;expression:</value></data>
+  <data name="About_FailSysInfo"><value>The system information dialog cannot be launched.</value></data>
+  <data name="MainFrm_GIO"><value>Group By Send &amp;&amp; &amp;Receive</value></data>
+  <data name="MsgView_CountTip"><value>It shows the count of the message-logged traces in the loaded file.</value></data>
+  <data name="MainFrm_FileEtl"><value>.etl</value></data>
+  <data name="MainFrm_FileE2e"><value>.svclog</value></data>
+  <data name="Find_LookInTip"><value>Define the scope to find the trace record(s).</value></data>
+  <data name="CF_DescriptionH"><value>Description</value></data>
+  <data name="CF_Type3"><value>Date/Time</value></data>
+  <data name="CF_Type2"><value>Numeric</value></data>
+  <data name="CF_Type1"><value>Any Text</value></data>
+  <data name="CF_NameH"><value>Name</value></data>
+  <data name="CF_LeftB"><value>{</value></data>
+  <data name="SL_HideProcess"><value>Hide This Process/Thread</value></data>
+  <data name="CF_Err19"><value>The XPath expression is too long.</value></data>
+  <data name="CF_Err18"><value>The XML data was not initialized.</value></data>
+  <data name="CF_Err13"><value>The custom filter parameters that were input are invalid.</value></data>
+  <data name="CF_Err12"><value>Custom filters were not exported.
+</value></data>
+  <data name="CF_Err11"><value>Custom filters were not imported.
+</value></data>
+  <data name="CF_Err10"><value>Application settings were not saved.
+</value></data>
+  <data name="CF_Err17"><value>The XML node tree was not initialized.</value></data>
+  <data name="CF_Err16"><value>The custom filter setting is invalid.</value></data>
+  <data name="CF_Err15"><value>An error occurred when outputting XML.</value></data>
+  <data name="CF_Err14"><value>A schema validation error occurred.</value></data>
+  <data name="CF_Equal"><value>=</value></data>
+  <data name="Btn_OK"><value>OK</value></data>
+  <data name="CF_Attr2"><value>@Attributes</value></data>
+  <data name="MainFrm_FollowBackJI"><value>Follow &amp;Transfer</value></data>
+  <data name="MainFrm_FollowBackMI"><value>Step &amp;Backward</value></data>
+  <data name="FV_Diag_Method"><value>Method</value></data>
+  <data name="MainFrm_RefreshMI"><value>&amp;Refresh</value></data>
+  <data name="CF_XEH"><value>XPath Expression</value></data>
+  <data name="CF_Sep"><value>:</value></data>
+  <data name="CF_New"><value>&amp;New...</value></data>
+  <data name="CF_Ibt"><value>&amp;Import...</value></data>
+  <data name="CF_Ext"><value>(Existing)</value></data>
+  <data name="CF_Ebt"><value>&amp;Export...</value></data>
+  <data name="CF_AFC"><value>&amp;Add Filter Clause</value></data>
+  <data name="CF_Add"><value>&amp;Add</value></data>
+  <data name="PrjMgr_OpenTitle"><value>Open Project</value></data>
+  <data name="MsgSortingTraceWarning"><value>Sorting now will affect loading performance. Do you still want to sort?</value></data>
+  <data name="Btn_Cancel"><value>Cancel</value></data>
+  <data name="FV_List_Title"><value>General Properties</value></data>
+  <data name="MainFrm_GroupByActivityTip"><value>Group trace record(s) by activity boundary.</value></data>
+  <data name="PrjMgr_SaveMsg"><value>The project has not been saved. Would you like to save it?</value></data>
+  <data name="MsgCannotWriteToFileEnd"><value>.</value></data>
+  <data name="PL_EndTime"><value>E&amp;nd:</value></data>
+  <data name="MainFrm_TimeClm"><value>Time</value></data>
+  <data name="MainFrm_FollowForwMI"><value>Jump To &amp;Next Transfer</value></data>
+  <data name="MainFrm_FollowForwJT"><value>Jump To &amp;Previous Transfer</value></data>
+  <data name="MainFrm_FollowForwJO"><value>&amp;Step Forward</value></data>
+  <data name="FV_DiagInfoOption"><value>Show Diagnostics Info</value></data>
+  <data name="MainFrm_CreateCustomFilterToolTip"><value>Create a custom filter based on the currently selected trace record.</value></data>
+  <data name="MsgErrorTraceLoading"><value>The trace record is not correct and cannot be loaded. Please check error in XML tab.</value></data>
+  <data name="RegisterFail"><value>The Microsoft Service Trace Viewer was not registered to the system.</value></data>
+  <data name="CF_Delete"><value>&amp;Delete</value></data>
+  <data name="MainFrm_DurationMinute"><value>m</value></data>
+  <data name="FV_DiagInfoOptionTip"><value>Show/hide the diagnostics information panel in a formatted tab.</value></data>
+  <data name="MsgFilePathTooLong"><value>'.
+The file path is too long.</value></data>
+  <data name="MainFrm_ExecThreadMode2"><value>Thread</value></data>
+  <data name="MainFrm_MessageViewTab"><value>Message</value></data>
+  <data name="TxtMenuCloseProjectAs"><value>Close Project</value></data>
+  <data name="MainFrm_FormattedTab"><value>Formatted</value></data>
+  <data name="MainFrm_ActivityMenuRes"><value>...</value></data>
+  <data name="MainFrm_ActivityMenu"><value>&amp;Activity</value></data>
+  <data name="MainFrm_FromString"><value>From: </value></data>
+  <data name="TxtTime"><value>Ti&amp;me</value></data>
+  <data name="TxtFrom"><value>Fro&amp;m:</value></data>
+  <data name="FV_Basic_Thread"><value>Thread</value></data>
+  <data name="About_Copyright"><value>© Microsoft Corporation.  All rights reserved.</value></data>
+  <data name="FV_MSG2_HeaderTree"><value>Headers Tree:</value></data>
+  <data name="FV_DateTimeFormat"><value>yyyy-MM-dd HH:mm:ss.ffff</value></data>
+  <data name="MainFrm_ExecProcessMode"><value>La&amp;yout Mode - Process</value></data>
+  <data name="SL_ProcessList"><value>Process Li&amp;st</value></data>
+  <data name="MsgSearchPatternNotSupported"><value>The following search pattern is not supported:
+</value></data>
+  <data name="PLDlg_Description"><value>The file(s) you are loading are very large. It may take some time to load the trace data. Partial loading allows you to load parts of the file(s) based on time. The actual size of all data loaded may be smaller than the estimated size.</value></data>
+  <data name="LE_DescriptionCol"><value>Description</value></data>
+  <data name="GP_MsgOut"><value>Sent Messages</value></data>
+  <data name="MainFrm_ReturnSingle"><value>
+</value></data>
+  <data name="STVClosing"><value>The Microsoft Service Trace Viewer will be terminated.</value></data>
+  <data name="MsgPrjNotExist"><value>The specified project does not exist.
+</value></data>
+  <data name="FV_Diag_Title"><value>Diagnostics Information</value></data>
+  <data name="FV_Basic_TraceIdentifier"><value>Trace Identifier/Code</value></data>
+  <data name="TR_LeftQu"><value>(</value></data>
+  <data name="SL_ERROR_LOAD_TRACE"><value>Traces were not loaded from activities.</value></data>
+  <data name="SL_ForwardTip"><value>Forward to next view</value></data>
+  <data name="MainFrm_ProjectTab"><value>Project</value></data>
+  <data name="FV_Basic_ActivityName"><value>Activity Name</value></data>
+  <data name="TxtTraceLevel"><value>Leve&amp;l:</value></data>
+  <data name="CopyTraceToClipboard"><value>Copy Trace to Clipboard</value></data>
+  <data name="MoreDataTag"><value>...</value></data>
+  <data name="FV_Basic_Source"><value>Source</value></data>
+  <data name="MainFrm_EndTicksClm"><value>End</value></data>
+  <data name="SL_ShowVerboseTip"><value>Show/hide trace record(s) on Verbose level in the graph.</value></data>
+  <data name="FV_List_TypeCol"><value>Type</value></data>
+  <data name="PrjMgr_FailOpen"><value>The project file cannot be opened.
+</value></data>
+  <data name="CF_XPathExpression2"><value>XPath expression:</value></data>
+  <data name="MainFrm_GSource"><value>Group By Source File</value></data>
+  <data name="SL_NormalTip"><value>Switch the graph to large size.</value></data>
+  <data name="Find_Scope1"><value>All Activities</value></data>
+  <data name="Find_Scope2"><value>Current Activity</value></data>
+  <data name="SL_TimeMillSecondSep"><value>:</value></data>
+  <data name="LE_GErrors"><value>Errors</value></data>
+  <data name="MainFrm_FileNameSep"><value>;</value></data>
+  <data name="MsgNullHandle"><value>The trace file cannot be opened. Please specify an existing file.</value></data>
+  <data name="SL_InvalidTransfer"><value>Failed to show the graph because there are some invalid transfer traces which are not supported by the graph detected. </value></data>
+  <data name="Find_Target"><value>Find &amp;target:</value></data>
+  <data name="MainFrm_MessageTab"><value>Message</value></data>
+  <data name="SL_FailCollapseTransfer"><value>The transfer was not collapsed because of the following reason:
+</value></data>
+  <data name="MainFrm_ClosePrj"><value>Close Proj&amp;ect</value></data>
+  <data name="MainFrm_ExecProcessModeTip0"><value>Select the layout mode of the graph.</value></data>
+  <data name="FO_Title"><value>Apply Options</value></data>
+  <data name="MsgFailToSaveProject"><value>The project was not saved.</value></data>
+  <data name="SL_NOTANALYSIS"><value>Root activities cannot be viewed directly in the activity graph. Please use the list view to view root activities.</value></data>
+  <data name="MainFrm_ActivityClm"><value>Activity</value></data>
+  <data name="MainFrm_ActivityTab"><value>Activity</value></data>
+  <data name="CreateCustomFilter"><value>Create Custom Filter...</value></data>
+  <data name="PrjView_NoPrjName"><value>Project - (no project)</value></data>
+  <data name="FV_List_MethodCol"><value>Method</value></data>
+  <data name="FV_MSG2_Headers2"><value>Headers:</value></data>
+  <data name="LE_Title"><value>Error Report</value></data>
+  <data name="MsgFilePathEnd"><value>'.</value></data>
+  <data name="MsgCmdLineInfo_Body"><value>SvcTraceViewer command line usage:
+SvcTraceViewer.exe [trace_file trace_file ... | OPTIONS]
+  - OPTIONS -
+    /? or /help
+           Display this usage message
+  - EXAMPLES -
+      SvcTraceViewer.exe
+      SvcTraceViewer.exe mytrace.svclog
+      SvcTraceViewer.exe mytrace1.svclog mytrace2.svclog
+</value></data>
+  <data name="MsgCannotOpenFile"><value>The following file cannot be opened: '</value></data>
+  <data name="CFIP_Title"><value>Import Custom Filters</value></data>
+  <data name="FV_MSG2_MsgSource"><value>Message Source:</value></data>
+  <data name="PrjMgr_SaveTitle"><value>Save Project</value></data>
+  <data name="MainFrm_ToString"><value>To: </value></data>
+  <data name="TR_RightQu"><value>)</value></data>
+  <data name="MainFrm_TraceCodeClm"><value>Trace Identifier</value></data>
+  <data name="Find_Lookin"><value>Look &amp;in:</value></data>
+  <data name="MainFrm_FileSaveDlg1"><value>WCF Trace Files (*.svclog)|*.svclog</value></data>
+  <data name="MainFrm_FilterOptionMI"><value>&amp;Filter Options...</value></data>
+  <data name="SL_Options"><value>O&amp;ptions</value></data>
+  <data name="CF_CFTitle"><value>Custom Filter</value></data>
+  <data name="MsgCannotOpenFileReturn"><value>The following file cannot be opened: 
+</value></data>
+  <data name="FV_Basic_Time"><value>Time</value></data>
+  <data name="MainFrm_ExecProcessMode2"><value>Process (Default)</value></data>
+  <data name="FV_Basic_RelatedActivityName"><value>Related Activity Name</value></data>
+  <data name="MsgSysExpLF"><value>A system error occurred while loading file '</value></data>
+  <data name="MainFrm_FilterEnabled"><value>You have enabled filters.
+</value></data>
+  <data name="MainFrm_ActivityMenuNonEmpty"><value>Activity - </value></data>
+  <data name="MainFrm_TabSingle"><value>	</value></data>
+  <data name="SL_ProcessList2"><value>Thread Li&amp;st</value></data>
+  <data name="SL_ShowATip"><value>Show/hide activity boundary trace record(s) in the graph.</value></data>
+  <data name="Find_Button"><value>Fin&amp;d</value></data>
+  <data name="PLDlg_Title"><value>Partial Loading</value></data>
+  <data name="UnRegisterFail"><value>The attempt to unregister the Microsoft Service Trace Viewer failed.</value></data>
+  <data name="MsgUnknownOpenParam"><value>An unknown error occurred while parsing and opening file(s) in command line parameters.</value></data>
+  <data name="FV_MSG2_GMsgInfo"><value>General Message Information</value></data>
+  <data name="EI_ToString1"><value>Execution Information:
+Computer - </value></data>
+  <data name="EI_ToString2"><value>
+Process - </value></data>
+  <data name="EI_ToString3"><value>
+Thread - </value></data>
+  <data name="Find_Cancel"><value>Cancel</value></data>
+  <data name="MainFrm_GActivity"><value>Group By Activity Boundary</value></data>
+  <data name="AppFilterItem1"><value>None</value></data>
+  <data name="AppFilterItem3"><value>Source Name</value></data>
+  <data name="AppFilterItem2"><value>Event ID</value></data>
+  <data name="AppFilterItem5"><value>Trace Identifier</value></data>
+  <data name="AppFilterItem4"><value>Process Name</value></data>
+  <data name="AppFilterItem7"><value>Start Time</value></data>
+  <data name="AppFilterItem6"><value>Description</value></data>
+  <data name="AppFilterItem9"><value>Time Range</value></data>
+  <data name="AppFilterItem8"><value>Stop Time</value></data>
+  <data name="SL_DateTimeMinSep"><value>:</value></data>
+  <data name="FV_Options"><value>Op&amp;tions</value></data>
+  <data name="FV_Basic_RelatedActivityID"><value>Related Activity ID</value></data>
+  <data name="MainFrm_OpenPrjMI"><value>Open &amp;Project...</value></data>
+  <data name="FV_Exp_Title"><value>Exception</value></data>
+  <data name="MainFrm_ExecProcessModeTip"><value>Use Process as the layout mode. Activities are grouped by Process in the graph. This is the default option of layout mode. </value></data>
+  <data name="Find_Lookin2"><value>Loo&amp;k In:</value></data>
+  <data name="MsgCannotFindFile"><value>The following file cannot be found: 
+</value></data>
+  <data name="MsgReturnBack"><value>
+</value></data>
+  <data name="MainFrm_DurationWrong"><value>The duration is invalid.</value></data>
+  <data name="TR_MsgLogTrace"><value>Message Log Trace</value></data>
+  <data name="MainFrm_CloseAllMI"><value>&amp;Close All</value></data>
+  <data name="CF_PrefixHeader"><value>Prefix</value></data>
+  <data name="FO_FilterOptionDlg"><value>Filter Options</value></data>
+  <data name="SL_Zoom"><value>&amp;Zoom</value></data>
+  <data name="MainFrm_RecentMI"><value>Rece&amp;nt Files</value></data>
+  <data name="SL_XSmallTip"><value>Switch the graph to small size.</value></data>
+  <data name="MsgCannotWriteToFile"><value>The following target file cannot be written to:
+</value></data>
+  <data name="MainFrm_OperationsMenu"><value>&amp;Operations</value></data>
+  <data name="CF_ParameterHeader"><value>Parameter</value></data>
+  <data name="CF_ParametersGP"><value>&amp;Parameters</value></data>
+  <data name="MsgTraceFilterChangeCallbackError"><value>An error occurred while calling back TraceFilterChangedHandler:</value></data>
+  <data name="MainFrm_CustomFilterMI"><value>&amp;Custom Filters...</value></data>
+  <data name="SL_FailExpandTransfer"><value>The transfer was not expanded because of the following reason:
+</value></data>
+  <data name="PL_StartTime"><value>&amp;Begin:</value></data>
+  <data name="MainFrm_ViewMenu"><value>&amp;View</value></data>
+  <data name="MsgSysExpLA1"><value>A system error occurred while loading traces from activity '</value></data>
+  <data name="MainFrm_CreateCustomFilter"><value>Create C&amp;ustom Filter</value></data>
+  <data name="MsgFailToSkipNode"><value>The trace nodes were not skipped.</value></data>
+  <data name="FV_MSG2_ReplyTo"><value>Reply To:</value></data>
+  <data name="MainFrm_SaveActivityGraphMenu"><value>Activity Graph Hook...</value></data>
+  <data name="CF_InvalidFilterFile"><value>The specified filter file is invalid. Custom filters were not imported.</value></data>
+  <data name="FO_O4"><value>Show t&amp;ransaction traces</value></data>
+  <data name="FO_O5"><value>Show re&amp;liable session traces</value></data>
+  <data name="FO_O6"><value>Show security tr&amp;aces</value></data>
+  <data name="FO_O1"><value>Show activity &amp;transfer traces</value></data>
+  <data name="FO_O2"><value>Show message &amp;sent/received traces</value></data>
+  <data name="FO_O3"><value>Show &amp;WCF ServiceModel traces</value></data>
+  <data name="SL_ATitle"><value>...</value></data>
+  <data name="CF_FN"><value>Filter &amp;name:</value></data>
+  <data name="CF_FD"><value>Filter &amp;description:</value></data>
+  <data name="TxtTo"><value>T&amp;o:</value></data>
+  <data name="TxtMB"><value>MB</value></data>
+  <data name="Find_What2"><value>Find &amp;What:</value></data>
+  <data name="MainFrm_LevelClm"><value>Level</value></data>
+  <data name="About_ProduceName"><value>Product Name</value></data>
+  <data name="Find_Title"><value>Find</value></data>
+  <data name="UnhandledException"><value>The Microsoft Service Trace Viewer encountered an unknown error:</value></data>
+  <data name="CFEP_Filter"><value>Custom filter files (*.stvcf)|*.stvcf</value></data>
+  <data name="CF_DescriptionHeader"><value>Description</value></data>
+  <data name="FV_MSG2_TO"><value>To:</value></data>
+  <data name="MainFrm_ErrTraceRecord2"><value>
+Error trace record:
+</value></data>
+  <data name="CF_Namespaces"><value>Namespaces</value></data>
+  <data name="MsgRefreshTraceSource"><value>An unknown error occurred while loading trace. Please press F5 to refresh data and try again.</value></data>
+  <data name="MainFrm_FileOpenDlg1"><value>WCF Trace Files (*.svclog)|*.svclog|Log Files (*.log)|*.log|Plain Text (*.txt)|*.txt|XML files (*.xml)|*.xml|All files(*.*)|*.*</value></data>
+  <data name="MainFrm_FileOpenDlg2"><value>WCF Trace Files (*.svclog)|*.svclog|ETW Files (*.etl)|*.etl|Log Files (*.log)|*.log|Plain Text (*.txt)|*.txt|XML Files (*.xml)|*.xml|All Files(*.*)|*.*</value></data>
+  <data name="MainFrm_DurationMillSecond"><value>ms</value></data>
+  <data name="FV_MSG2_ActivityId"><value>Activity ID:</value></data>
+  <data name="CF_None"><value>(None)</value></data>
+  <data name="CF_NSLL"><value>&amp;Namespace:</value></data>
+  <data name="CF_PFLL"><value>&amp;Prefix:</value></data>
+  <data name="CF_Err8"><value>The namespace cannot be empty.</value></data>
+  <data name="CF_Err9"><value>The prefix is a duplicate.</value></data>
+  <data name="CF_Err2"><value>The XPath expression cannot be empty.</value></data>
+  <data name="CF_Err3"><value>The XPath expression is invalid.</value></data>
+  <data name="CF_Err1"><value>The name cannot be empty.</value></data>
+  <data name="CF_Err7"><value>The prefix cannot be empty.</value></data>
+  <data name="CF_Err4"><value>The filter name is a duplicate.</value></data>
+  <data name="CF_Err5"><value>The input parameters are invalid.</value></data>
+  <data name="SelectAllActivities"><value>Select All Activities</value></data>
+  <data name="Filter_TP_SearchIn"><value>Available filter options</value></data>
+  <data name="ApplicationIconResourceName"><value>SvcTraceViewer.Application.ico</value></data>
+  <data name="MainFrm_SavePrjMI"><value>&amp;Save Project</value></data>
+  <data name="CF_NoInvalidFilterName"><value>(Unknown)</value></data>
+  <data name="MainFrm_EditMenu"><value>&amp;Edit</value></data>
+  <data name="FO_Description"><value>Set up filter options to display/hide traces. </value></data>
+  <data name="MainFrm_GroupByNone2"><value>Group B&amp;y - (None)</value></data>
+  <data name="MsgFailSavePrj"><value>The following project was not saved to file:
+</value></data>
+  <data name="MainFrm_ReloadFile"><value>Source files have been modified. You can use the Refresh menu item to reflect the changes.</value></data>
+  <data name="About_OK"><value>OK</value></data>
+  <data name="SL_Small"><value>Normal</value></data>
+  <data name="SL_ShowA"><value>Show Activity Boundary Traces</value></data>
+  <data name="MainFrm_ExecThreadModeTip"><value>Use Thread as the layout mode. Activities are grouped by Thread in the graph. This mode is helpful when WCF service and client are running in the same process.</value></data>
+  <data name="MsgLevelFormatErr"><value>There is an error in the level format of the trace record.</value></data>
+  <data name="MainFrm_GroupByIO2"><value>Group B&amp;y - (Send &amp;&amp; Receive)</value></data>
+  <data name="MainFrm_GroupByTip"><value>Group trace record(s) by different criteria.</value></data>
+  <data name="TxtPrjSeperator"><value>- </value></data>
+  <data name="MsgFileStreamNotReadable"><value>The file stream cannot be read.</value></data>
+  <data name="FV_MSG2_RightQ"><value>] </value></data>
+  <data name="MainFrm_GroupByNoneTip"><value>No group in trace record(s).</value></data>
+  <data name="FV_MSG2_ActivityName"><value>Activity Name:</value></data>
+  <data name="MsgFileNotExist"><value>The specified file does not exist.
+-</value></data>
+  <data name="MsgFileNotFound"><value>'.
+The file was not found.</value></data>
+  <data name="FV_BasicInfoOption"><value>Show Basic Information</value></data>
+  <data name="SL_UnknownException"><value>An unexpected error occurred while analyzing the activity. </value></data>
+  <data name="SL_Normal"><value>Large</value></data>
+  <data name="MsgUnhandledExceptionInEtwGetTraces"><value>An unknown error occurred while processing one or more traces.</value></data>
+  <data name="Filter_TP_TraceLevel"><value>Trace level filter</value></data>
+  <data name="LE_GPFError"><value>File Errors</value></data>
+  <data name="CF_PTHeader"><value>Parameter Type</value></data>
+  <data name="CF_InvalidFilter"><value>The following filter was invalid and not imported:
+</value></data>
+  <data name="MainFrm_GroupBySource"><value>&amp;Group By - (Source File)</value></data>
+  <data name="MsgErrorOccursOnConvertCrimson"><value>The following XML error occurred while converting the file:
+</value></data>
+  <data name="MsgFileConvertTraceErr"><value>Some error traces in the source ETL file were found and skipped during the conversion.</value></data>
+  <data name="TxtKBytes"><value>KB</value></data>
+  <data name="AppFilterItem10"><value>Endpoint Address</value></data>
+  <data name="AppFilterItem11"><value>Custom Filters</value></data>
+  <data name="AppFilterItem12"><value>All</value></data>
+  <data name="AppFilterItem13"><value>Critical</value></data>
+  <data name="AppFilterItem14"><value>Error And Up</value></data>
+  <data name="AppFilterItem15"><value>Warning And Up</value></data>
+  <data name="AppFilterItem16"><value>Information And Up</value></data>
+  <data name="AppFilterItem17"><value>Application Data</value></data>
+  <data name="AppFilterItem18"><value>Trace Raw Data</value></data>
+  <data name="TxtBytes"><value>B</value></data>
+  <data name="CF_ExpressionHeader"><value>Expression</value></data>
+  <data name="MainFrm_FindToolBar"><value>Find Tool &amp;Bar</value></data>
+  <data name="MainFrm_FilterNowMI"><value>Filter N&amp;ow</value></data>
+  <data name="CF_IPError"><value>There is an error in the input parameter(s).</value></data>
+  <data name="Filter_TP_FilterNow"><value>Filter traces using current settings</value></data>
+  <data name="MainFrm_ActivityNameClm"><value>Activity Name</value></data>
+  <data name="FV_Diag_Properties"><value>Properties:</value></data>
+  <data name="TxtMenuSaveProject"><value>Save Project</value></data>
+  <data name="SL_BackwardTip"><value>Back to previous view</value></data>
+  <data name="MainFrm_MessageViewMI"><value>&amp;Message View</value></data>
+  <data name="FO_MSG1"><value>Do you want to apply it to existing data after saving?</value></data>
+  <data name="CF_ACFTitle"><value>New Custom Filter</value></data>
+  <data name="MainFrm_DurationZero"><value>0ms</value></data>
+  <data name="MainFrm_DurationHour"><value>h</value></data>
+  <data name="MsgAccessDenied"><value>'.
+Access was denied.</value></data>
+  <data name="CF_InvalidLogic"><value>The XPath expression logic statement is invalid.</value></data>
+  <data name="SL_OutOfSize"><value>The graph exceeds the maximum size. The part of the graph that exceeds the maximum size is not shown.</value></data>
+  <data name="FV_MSG2_Title"><value>Message Log</value></data>
+  <data name="MsgAppSettingSaveError"><value>Application settings were not persisted.</value></data>
+  <data name="FV_MSG2_LeftQ"><value>[</value></data>
+  <data name="About_Description"><value>Utility to view, search, filter, and analyze traces generated by one or multiple sources.</value></data>
+  <data name="SortByStartTime"><value>Sort by &amp;Start Time</value></data>
+  <data name="MainFrm_TraceFromActivity"><value>Activity: </value></data>
+  <data name="FV_MSG2_ActivityName2"><value>Activity Name</value></data>
+  <data name="PLDlg_OK"><value>OK</value></data>
+  <data name="About_Title"><value>About Microsoft Service Trace Viewer</value></data>
+  <data name="TxtCannotLoadMessage"><value>The message for the trace cannot be loaded.</value></data>
+  <data name="FV_MSG2_Method"><value>Method:</value></data>
+  <data name="MainFrm_MultiNamedActivityTip"><value>Multiple activity names:
+</value></data>
+  <data name="Find_FindWhatTip"><value>Input the string to look for.</value></data>
+  <data name="About_CName"><value>Company Name</value></data>
+  <data name="FV_MSG_MSGID"><value>Message ID:</value></data>
+  <data name="FV_MSG_Title"><value>Message Properties and Headers</value></data>
+  <data name="MainFrm_ErrTraceRecord"><value>The trace record is not correct and cannot be loaded. This might be caused by one of the following reasons:
+	1. The source file has been changed, which affected the location of the loading trace.
+	2. There is no valid ending tag in the trace record.
+	3. The trace file goes wrong.
+
+Trace record file offset:	</value></data>
+  <data name="SL_ExecutionSep"><value>: </value></data>
+  <data name="CF_DlgDescription"><value>Manage custom filters:</value></data>
+  <data name="MainFrm_CancelMI"><value>Stop</value></data>
+  <data name="Filter_TP_Restore"><value>Restore all traces.</value></data>
+  <data name="MainFrm_ActivityGraphMenu"><value>&amp;Activity Graph</value></data>
+  <data name="Utility_UNSize"><value>Unknown Size</value></data>
+  <data name="MainFrm_GroupByActivity2"><value>Group B&amp;y - (Activity Boundary)</value></data>
+  <data name="MsgSFNotFound"><value>The file was not found.</value></data>
+  <data name="Find_NoFound"><value>End of file/activity reached. No trace record was found!</value></data>
+  <data name="FV_MSG2_PROPERTY"><value>Properties:</value></data>
+  <data name="FV_MSG_RelatesTo"><value>Relates To:</value></data>
+  <data name="Find_What"><value>Find w&amp;hat:</value></data>
+  <data name="Find_Next"><value>&amp;Find Next</value></data>
+  <data name="MainFrm_FilterDisable"><value>Do you want to disable the filter?</value></data>
+  <data name="MsgUnsupportedSchema"><value>The file format is not supported.</value></data>
+  <data name="MainFrm_WindowTitle"><value>Microsoft Service Trace Viewer</value></data>
+  <data name="CFEP_Title"><value>Export Custom Filters</value></data>
+  <data name="MainFrm_ActivityMenuEmpty"><value>Activity - (Empty)</value></data>
+  <data name="TxtMenuAddFile"><value>Add File</value></data>
+  <data name="MainFrm_TraceFrom"><value>Loaded from: </value></data>
+  <data name="MainFrm_TracesClm"><value># Traces</value></data>
+  <data name="TxtMenuOpenProject"><value>Open Project...</value></data>
+  <data name="SL_XSmall"><value>Small</value></data>
+  <data name="GP_MsgUnkn"><value>Unknown Messages</value></data>
+  <data name="MsgDirectoryNotFound"><value>'.
+The directory was not found.</value></data>
+  <data name="MsgSysExpC"><value>
+Do you want to continue?</value></data>
+  <data name="BtnFilterNow"><value>F&amp;ilter Now</value></data>
+  <data name="LE_GPUError"><value>Unknown Errors</value></data>
+  <data name="FV_MSG2_FROM"><value>From:</value></data>
+  <data name="CF_NamespaceHeader"><value>Namespace</value></data>
+  <data name="MainFrm_RecentProjectMI"><value>Recent P&amp;rojects</value></data>
+  <data name="MainFrm_AddMI"><value>&amp;Add...</value></data>
+  <data name="Find_Options"><value>Find options</value></data>
+  <data name="MainFrm_GNone"><value>None</value></data>
+  <data name="BtnRestore"><value>&amp;Clear</value></data>
+  <data name="TxtMenuSaveProjectAs"><value>Save Project As...</value></data>
+  <data name="MsgProcessTraceFailed"><value>One or more traces were not processed.</value></data>
+  <data name="FileBlockInfo_EmptyFile"><value>(Empty File)</value></data>
+  <data name="TxtMenuRemoveFile"><value>Remove File</value></data>
+  <data name="MsgTimeFormatErr"><value>There is an error in the time format of the trace record.</value></data>
+  <data name="LE_GPTError"><value>Trace Record Errors</value></data>
+  <data name="FV_MSG2_ACTION"><value>Action:</value></data>
+  <data name="FV_Exp_Message"><value>Message:</value></data>
+  <data name="SL_GraphEmpty"><value>The operation will make the graph empty, do you want to continue?</value></data>
+  <data name="MsgTimeRangeError"><value>The time sequence in the following log file is corrupted:</value></data>
+  <data name="MsgFailToSeekFile"><value>The following file cannot be read: '</value></data>
+  <data name="MsgIOExp"><value>An I/O error occurred.</value></data>
+  <data name="FV_MSG2_Properties"><value>Properties:</value></data>
+  <data name="FV_AppDataPartName"><value>Application Data</value></data>
+  <data name="SL_ZoomTip"><value>Zoom the activity graph to a different scale.</value></data>
+  <data name="TR_TraceTransfer"><value>Trace Transfer</value></data>
+  <data name="MainFrm_TreeViewMI"><value>&amp;Graph View</value></data>
+  <data name="MainFrm_SourceClm"><value>Source</value></data>
+  <data name="IgnoreException"><value>Do you want to ignore it and continue?</value></data>
+  <data name="FV_MSG_MSGHEADER"><value>Message Headers</value></data>
+  <data name="MainFrm_DescriptionClm"><value>Description</value></data>
+  <data name="MainFrm_HelpMI"><value>Hel&amp;p</value></data>
+  <data name="FV_List_NameCol"><value>Name</value></data>
+  <data name="MsgInvokeExceptionOccur"><value>An unknown error occurred while invoking a delegate on UI thread.</value></data>
+  <data name="XML_MessageLogTraceRecordStop"><value>&lt;/MessageLogTraceRecord&gt;</value></data>
+  <data name="TxtMenuRemoveAllFiles"><value>Remove All Files</value></data>
+  <data name="MsgReaderEOF"><value>The trace record ends unexpectedly.</value></data>
+  <data name="MainFrm_ProcessNameClm"><value>Process Name</value></data>
+  <data name="FV_Basic_Process"><value>Process</value></data>
+  <data name="MsgFilePathNotSupport"><value>'.
+The file path format is not supported.</value></data>
+  <data name="FV_MSG2_EnvelopeInfo"><value>Envelope Information</value></data>
+  <data name="PrjView_PrjViewHeader"><value>Project - </value></data>
+  <data name="FV_EQUAL"><value>=</value></data>
+  <data name="FV_ERROR"><value>An error occurred while loading the trace in formatted view.
+/register Register SvcTraceViewer to the system.
+/unregister Unregister SvcTraceViewer from the system.</value></data>
+  <data name="TxtLookFor"><value>L&amp;ook For</value></data>
+  <data name="MsgSearchPatternPathIsFile"><value>The following path is a file:
+</value></data>
+  <data name="SL_ProcessListTip"><value>Show/hide process in the view.</value></data>
+  <data name="MsgNoValidTraceInFile"><value>There is no trace loaded from the file.</value></data>
+  <data name="MainFrm_GProcess"><value>Group By Process/Thread</value></data>
+  <data name="MainFrm_StartTicksClm"><value>Start</value></data>
+  <data name="GP_MsgIn"><value>Received Messages</value></data>
+  <data name="MainFrm_GroupByInOutTip"><value>Group trace record(s) by message in and out.</value></data>
+  <data name="MsgUnknownFileFormat"><value>The file schema could not be identified because of an I/O error.
+</value></data>
+  <data name="MsgSearchPatternAccessDenied"><value>You do not have the permission to access:
+</value></data>
+  <data name="DlgTitleError"><value>Microsoft Service Trace Viewer</value></data>
+  <data name="PrjMgr_OpenFilter"><value>Microsoft TraceView Project File(*.stvproj)|*.stvproj</value></data>
+  <data name="Find_T3"><value>Within XML Attribute</value></data>
+  <data name="Find_T2"><value>Within XML Text</value></data>
+  <data name="Find_T1"><value>Raw log data</value></data>
+  <data name="Find_T4"><value>Logged Message</value></data>
+  <data name="Find_O1"><value>Ignore &amp;root activity</value></data>
+  <data name="Find_O2"><value>Match &amp;case</value></data>
+  <data name="Find_O3"><value>Match &amp;whole word</value></data>
+  <data name="MainFrm_FileMenu"><value>&amp;File</value></data>
+  <data name="MainFrm_GroupBySourceTip"><value>Group trace record(s) by source file.</value></data>
+  <data name="CFIP_Filter"><value>Custom filter files (*.stvcf)|*.stvcf</value></data>
+  <data name="CF_OperationHeader"><value>Operation</value></data>
+  <data name="CF_ValueHeader"><value>Value</value></data>
+  <data name="MainFrm_Activities"><value>Activities: </value></data>
+  <data name="FV_List_ValueCol"><value>Value</value></data>
+  <data name="MainFrm_AboutMI"><value>&amp;About Microsoft Service Trace Viewer</value></data>
+  <data name="SortByEndTime"><value>Sort by &amp;End Time</value></data>
+  <data name="MainFrm_OpenMI"><value>&amp;Open...</value></data>
+  <data name="MainFrm_DurationClm"><value>Duration</value></data>
+  <data name="MainFrm_DurationDay"><value>d</value></data>
+  <data name="MsgBinaryReaderExp"><value>An error occurred while reading the file.</value></data>
+  <data name="MsgReturn2"><value>'.
+</value></data>
+  <data name="FileBlockInfo_LoadingPre"><value>Estimated %: </value></data>
+  <data name="About_SysInfo"><value>&amp;System Info</value></data>
+  <data name="MainFrm_ExitMI"><value>E&amp;xit</value></data>
+  <data name="PLDlg_Cancel"><value>Cancel</value></data>
+  <data name="FV_BasicInfoOptionTip"><value>Show/hide the basic information panel in a formatted tab.</value></data>
+  <data name="FV_Exp_StackTrace"><value>Stack Trace:</value></data>
+  <data name="TR_Arrow"><value>-&gt; </value></data>
+  <data name="MainFrm_DurationSecond"><value>s</value></data>
+  <data name="About_Version2"><value>Version</value></data>
+  <data name="MsgOutOfMemory"><value>The Service Trace Viewer ran out of memory and will be terminated.</value></data>
+  <data name="FV_PROPERTY_HEADER"><value>@</value></data>
+  <data name="LE_OffsetCol"><value>File Offset</value></data>
+  <data name="MsgView_Count"><value>Message Logged Traces: </value></data>
+  <data name="MsgIOExceptionSeek"><value>An I/O error occurred while seeking file '</value></data>
+  <data name="FV_MSG2_HEADERS"><value>Headers</value></data>
+  <data name="MsgSearchPatternDirectoryNotFound"><value>The following directory cannot be found:
+</value></data>
+  <data name="FV_Basic_ActivityID"><value>Activity ID</value></data>
+  <data name="MainFrm_XMLTab"><value>XML</value></data>
+  <data name="MsgView_Header1"><value>Process</value></data>
+  <data name="MsgView_Header0"><value>Date/Time</value></data>
+  <data name="MsgView_Header3"><value>Action</value></data>
+  <data name="MsgView_Header2"><value>Activity</value></data>
+  <data name="MsgView_Header4"><value>From/To</value></data>
+  <data name="MainFrm_ThreadIDClm"><value>Thread ID</value></data>
+  <data name="MainFrm_GroupByProcess2"><value>Group B&amp;y - (Process/Thread)</value></data>
+  <data name="MsgInvalidInputFile"><value>The input file is invalid.</value></data>
+  <data name="FV_Basic_Computer"><value>Computer</value></data>
+  </root>

@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3BAF908B-5A7E-4633-964A-767033304816}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>Default</LangVersion>
+    <AssemblyName>SvcTraceViewer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Management\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyRef.cs" />
+    <Compile Include="FXAssembly.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\Activity.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ActivityAnalyzerHelper.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ActivityColumnItem.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ActivityTraceModeAnalyzer.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ActivityTraceModeAnalyzerParameters.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ActivityTraceModeGraphProvider.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ActivityTransferCellControl.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ActivityType.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\AdjustDisableState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\AdjustEnableState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\AdjustingTimeRangeByDTPicker.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\AdjustingTimeRangeByScroller.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\AppConfigManager.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\AppDataTraceDetailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ApplicationColors.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\AppSettingsException.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\BasicTraceInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\BusyProjectState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CallingDirection.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CommonStrings.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CreateCustomFilterByTemplateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CustomFilter.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CustomFilterCondition.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CustomFilterDefineDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CustomFilterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CustomFilterManager.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CustomFilterOptionSettings.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\CustomFilterParameterValueType.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\DateTimePair.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\DefaultTraceInfoProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\DiagnosticsTraceDetailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\DTRangeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\DTRangeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\E2EInvalidFileException.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\E2ESchema.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\EmptyProjectState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\EtwTraceReader.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\EventKey.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\EventSchema.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ExceptionManager.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ExceptionTraceDetailControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ExecutionCellControl.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ExecutionColumnItem.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ExecutionInfo.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ExpandablePart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ExpandingLevel.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ExpandingState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FieldObjectBooleanPropertyEnableStateAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FieldObjectSetPropertyStateAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileBlockInfo.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileBlockInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileConverter.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileConverterException.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileDescriptor.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileEntireLoadingState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileLoadingProjectState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileLoadingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileLoadingTaskInfo.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FilePartialLoadingState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FilePartialLoadingStrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileReloadingProjectState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FileRemovingProjectState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FilterCriteria.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FilterEngine.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FilterOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FindCriteria.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FindingOptions.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FindingScope.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FindingTarget.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FindingToken.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\FindToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\GraphViewMode.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\GraphViewProvider.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\GroupByActivityState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\GroupByInOutState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\GroupByNoneState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\GroupByProcessState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\GroupBySourceFileState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\HorzBundRowControl.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\HorzBundRowItem.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\HorzBundTitleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IAdvancedTraceInfoProvider.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IdleProjectState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IErrorReport.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\Images.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IPersistStatus.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IProgressReport.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IStateAwareObject.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IUserInterfaceProvider.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IWindowlessControlContainer.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\IWindowlessControlContainerExt.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\LeftPanelActivityViewState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\LeftPanelMessageViewState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\LeftPanelProjectViewState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\LeftPanelTreeViewState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ListViewItemComparer.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ListViewItemNumberComparer.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ListViewItemStringComparer.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ListViewItemTagComparer.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ListViewItemTagComparerTarget.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\LogFileException.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\MessageExchangeCellControl.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\MessageExchangeCellItem.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\MessageHeaderTraceInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\MessageProperty.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\MessageTraceInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\MessageViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\MofUtils.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\MouseOverMessageExchangeMessage.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\NativeMethods.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\NoFileProjectState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\NonOpsState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\NSEditDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ObjectStateBase.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ObjectStateMachineAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ObjectStateSwitchFailReason.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ObjectStateTransferAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\PersistedSettings.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\Program.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ProjectManager.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\ProjectTreeViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\RefreshState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\RichTextXmlFormatter.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\RichTextXmlRenderer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SearchOptions.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SourceFileChangedState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SourceFileUnChangedState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SourceLevels.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SR.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SRCategoryAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SRDescriptionAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\StateMachineController.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SupportedFileFormat.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SwimLanesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SwimlanesDisableState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\SwimlanesEnableState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TaskInfoBase.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TempFileManager.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceCallback.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDataSource.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDataSourceCacheExtension.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDataSourceIdleState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDataSourceValidatingState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailAppDataPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailBasicInfoPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailDiagnosticsPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailedProcessParameter.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailExceptionPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailInfoControlParam.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailInfoManager.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailListPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailMessageInfoPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceDetailMessageLogInfoPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceEntry.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterChangedEventArgs.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterDisableState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterEnableState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterSearchNoneState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterSearchTextState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterSearchTimeRangeState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterSearchTimeState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceLoadingProjectState.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceLoadingTaskInfo.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceLocationComparer.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceReader.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceRecord.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceRecordCellControl.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceRecordCellItem.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceRecordComparer.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceRecordPosition.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceRecordSetSeverityLevel.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TracesCollection.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceTransferExpandableIconControl.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceViewerException.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceViewerFormProxy.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\UIControlEnablePropertyStateAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\UIControlSpecialStateEventHandlerAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\UIControlVisiblePropertyStateAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\UIMenuItemEnablePropertyStateAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\UIToolStripItemEnablePropertyStateAttribute.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\Utilities.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WindowlessControlBase.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WindowlessControlBaseExt.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WindowlessControlEventArgs.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WindowlessControlEventType.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WindowlessControlExtentionEventCallback.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WindowlessControlMessage.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WindowlessControlScale.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WindowlessControlZOrder.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\WmiDataType.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\Xml2RtfConfig.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\XmlNodeRecord.cs" />
+    <Compile Include="Microsoft.Tools.ServiceModel.TraceViewer\XmlUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThisAssembly.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft.Tools.ServiceModel.TraceViewer\TraceFilterControl.resx">
+      <DependentUpon>TraceFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SvcTraceViewer.AboutBox.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ActivityPauseTrace.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ActivityResumeTrace.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ActivityStartTrace.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ActivityStopTrace.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.Application.ico" />
+    <EmbeddedResource Include="SvcTraceViewer.Call.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.CallWithMsg.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ConnectionActivityIcon.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.CustomFilterValidator.xsd" />
+    <EmbeddedResource Include="SvcTraceViewer.DefaultActivityIcon.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ErrorTrace.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ExecutionActivityIcon.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.Helper.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.HostActivityIcon.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.HttpSys.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ListenActivity.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.Message.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.MessageActivityIcon.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.MessageHandling.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.MessageReceiveTrace.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.MessageSentTrace.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.MinusIcon.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.Operation.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.OperationReturn.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.PlusIcon.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.ProcessTitleBak.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.resx" />
+    <EmbeddedResource Include="SvcTraceViewer.RootActivity.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.SL_Backward.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.SL_Forward.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.SmartTag.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.TraceDetailedMinus.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.TraceDetailedPlus.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.Transfer.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.TransferIn.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.TransferOut.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.Unknown.bmp" />
+    <EmbeddedResource Include="SvcTraceViewer.WarningTrace.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

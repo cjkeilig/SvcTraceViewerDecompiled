@@ -1,0 +1,42 @@
+namespace Microsoft.Tools.ServiceModel.TraceViewer
+{
+	internal enum Images
+	{
+		Call,
+		Helper,
+		Operation,
+		Reply,
+		HttpSys,
+		Unknown,
+		Message,
+		MessageHandling,
+		Transfer,
+		CallWithMessage,
+		TransferIn,
+		TransferOut,
+		SmartTag,
+		SL_Backward,
+		SL_Forward,
+		MessageActivityIcon,
+		HostActivityIcon,
+		ExecutionActivityIcon,
+		ConnectionActivityIcon,
+		PlusIcon,
+		MinusIcon,
+		ActivityStartTrace,
+		ActivityStopTrace,
+		ActivityResumeTrace,
+		ActivityPauseTrace,
+		MessageSentTrace,
+		MessageReceiveTrace,
+		RootActivity,
+		ListenActivity,
+		DefaultActivityIcon,
+		ErrorTrace,
+		WarningTrace,
+		TraceDetailedPlus,
+		TraceDetailedMinus,
+		ProcessTitleBack,
+		AboutBox
+	}
+}

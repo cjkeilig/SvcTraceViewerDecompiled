@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="CustomInputTypeEnum">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="filter">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="ShortString" minOccurs="1" maxOccurs="1" />
+                <xs:element name="description" type="LongString" minOccurs="0" maxOccurs="1" />
+                <xs:element name="xpath" type="VeryLongString" minOccurs="1" maxOccurs="1" />
+                <xs:element name="namespaces" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element minOccurs="1" maxOccurs="unbounded" name="ns">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="prefix" type="ShortString" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="parameters" minOccurs="0" maxOccurs="1">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element minOccurs="1" maxOccurs="unbounded" name="param">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                              <xs:attribute name="type" type="CustomInputTypeEnum" use="required" />
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="ShortString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="20" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="LongString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="0" />
+            <xs:maxLength value="512" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="VeryLongString">
+      <xs:restriction base="xs:string">
+        <xs:minLength value="0" />
+        <xs:maxLength value="5120" />
+      </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
